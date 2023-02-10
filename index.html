@@ -7,17 +7,26 @@
     <title>Media Queries</title>
     <style>
         .box{
-            font-size: 72px;
+            font-size: 50px;
             text-align: center;
             background-color: red;
             color: white;
+            display: none;
         }
+
+        @media (max-width:500px) {
+            #box-1{
+                display: block;
+                background-color: aqua;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div class="box" id="bOX-1">Mai ek iPhone hoon</div>
-    <div class="box" id="bOX-2">Mai ek Tablet hoon</div>
-    <div class="box" id="bOX-3">Mai ek Computer hoon</div>
-    <div class="box" id="bOX-4">Mai ek  widescreen computer hoon</div>
+    <div class="box" id="box-1">Mai ek iPhone hoon</div>
+    <div class="box" id="box-2">Mai ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai ek Computer hoon</div>
+    <div class="box" id="box-4">Mai ek  widescreen computer hoon</div>
 </body>
 </html>
